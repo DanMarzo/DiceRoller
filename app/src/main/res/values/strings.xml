@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AtividadePM</string>
+    <string name="buttonRandom">ROLL</string>
+    <string name="resultadoRandom">Aperte o botão</string>
 </resources>
