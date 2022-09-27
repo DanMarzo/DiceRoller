@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AtividadePM</string>
+    <string name="buttonRandom">ROLAR</string>
+    <string name="resultadoRandom">Aperte o botão</string>
+</resources>
