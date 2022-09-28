@@ -7,20 +7,24 @@ import android.widget.TextView
 import com.example.atividadepm.databinding.ActivityMainBinding
 import kotlin.random.Random
 
+
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
-        binding.buttonNumber.setOnClickListener{rollDice()}
         setContentView(binding.root)
+        //setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.buttonNumber.setOnClickListener{rollDice()}
+
     }
 
     fun rollDice()
     {
-        val randomint = (1..6).random().toString()
-        binding.resultadoRandom.text = randomint
+        val resultText: TextView = binding.resultadoRandom
+        val gerarNumero = binding.numberData.text.toString().toInt()
+        val saidaRandom = (1..gerarNumero).random()
+        resultText.text = saidaRandom.toString()
     }
 
 }

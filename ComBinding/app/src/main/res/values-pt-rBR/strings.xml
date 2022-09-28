@@ -3,4 +3,5 @@
     <string name="app_name">AtividadePM</string>
     <string name="buttonRandom">ROLAR</string>
     <string name="resultadoRandom">Aperte o botão</string>
+    <string name="dataInput">Limite</string>
 </resources>

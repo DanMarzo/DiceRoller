@@ -2,4 +2,5 @@
     <string name="app_name">AtividadePM</string>
     <string name="buttonRandom">ROLL</string>
     <string name="resultadoRandom">Press button</string>
+    <string name="dataInput">bound</string>
 </resources>
