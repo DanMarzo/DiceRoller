@@ -8,37 +8,6 @@
     >
 
 
-    <TextView
-        android:id="@+id/resultadoRandom"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/resultadoRandom"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/numberData"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
-
-    <EditText
-        android:id="@+id/numberData"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/dataInput"
-        android:inputType="number"
-        android:textAlignment="textStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonNumber"
-        app:layout_constraintHorizontal_bias="0.632"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/resultadoRandom"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-        tools:text="@string/dataInput" />
-
     <Button
         android:id="@+id/buttonNumber"
         android:layout_width="92dp"
@@ -52,16 +21,17 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/resultadoRandom"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@id/buttonNumber"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.812"
+        tools:srcCompat="@drawable/dice_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
