@@ -15,19 +15,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
         setContentView(binding.root)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        //binding.buttonNumber.setOnClickListener{rollDice()}
-        binding.buttonNumber.setOnClickListener{ rollDice() }
+        binding.buttonNumber.setOnClickListener{rollDice()}
     }
 
     private fun rollDice() {
         val dice = Dice(6);
         val diceRoll = dice.rool();
         val diceImage: ImageView = binding.resultadoRandom;
+        //val diceImage: ImageView = findViewById(R.id.resultadoRandom);
         diceImage.contentDescription = diceRoll.toString()
+
 
         val drawableResource = when (diceRoll) {
             1 -> R.drawable.dice_1
@@ -40,9 +40,9 @@ class MainActivity : AppCompatActivity() {
 
         diceImage.setImageResource(drawableResource)
     }
-    class Dice (val numSides: Int) {
+    class Dice (val numSlides: Int) {
         fun rool(): Int {
-            return (1..numSides).random();
+            return (1..this.numSlides).random();
         }
     }
     /*fun rollDice()
