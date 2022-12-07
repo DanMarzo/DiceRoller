@@ -16,15 +16,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setContentView(binding.root)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.buttonNumber.setOnClickListener{rollDice()}
+        //setContentView(binding.root)
+        //binding = ActivityMainBinding.inflate(layoutInflater)
+        //binding.buttonNumber.setOnClickListener{rollDice()}
+        val buton = findViewById<Button>(R.id.buttonNumber)
+        buton.setOnClickListener{
+            rollDice()
+        }
+
     }
 
     private fun rollDice() {
         val dice = Dice(6);
         val diceRoll = dice.rool();
-        val diceImage: ImageView = binding.resultadoRandom;
+        val diceImage: ImageView = findViewById(R.id.resultadoRandom);
         //val diceImage: ImageView = findViewById(R.id.resultadoRandom);
         diceImage.contentDescription = diceRoll.toString()
 
