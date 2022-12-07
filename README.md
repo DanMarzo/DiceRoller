@@ -3,4 +3,4 @@
 ------
 ### Imagem da primeira imagem selecionado aleatoriamente
 
-[logo](DiceRoller/main/DiceRoller.jpg) "Execução 1"
+![screen](DiceRoller/main/DiceRoller.jpg) "Execução 1"
