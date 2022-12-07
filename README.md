@@ -2,4 +2,4 @@
 ### Com imagem e com número  
 ------ 
 ### Imagem da primeira imagem selecionado aleatoriamente
-[logo]: https://github.com/DanMarzo/DiceRoller/blob/main/DiceRoller/DiceRoller.jpg
+[logo]: https://raw.githubusercontent.com/DanMarzo/DiceRoller/main/DiceRoller/DiceRoller.jpg "Execução 1"
